@@ -1,0 +1,14 @@
+Logical ID  Physical ID Type    Status  Status reason
+BasicNotebookInstance	arn:aws:sagemaker:us-east-1:989069432549:notebook-instance/frauddetectionnotebookinstance	AWS::SageMaker::NotebookInstance	CREATE_COMPLETE	-
+BasicNotebookInstanceLifecycleConfig	arn:aws:sagemaker:us-east-1:989069432549:notebook-instance-lifecycle-config/basicnotebookinstancelifecycleconfig-nbtnsfov4xei	AWS::SageMaker::NotebookInstanceLifecycleConfig	CREATE_COMPLETE	-
+FirehoseDeliveryIAMPolicy	aws-f-Fire-1OAVA6HNY7OCK	AWS::IAM::Policy	CREATE_COMPLETE	-
+FirehoseDeliveryIAMRole	aws-fraud-detection-using-FirehoseDeliveryIAMRole-AOTARKHYRERQ	AWS::IAM::Role	CREATE_COMPLETE	-
+KinesisFirehoseDeliveryStream	fraud-detection-firehose-stream	AWS::KinesisFirehose::DeliveryStream	CREATE_COMPLETE	-
+LambdaExecutionRole	aws-fraud-detection-using-mach-LambdaExecutionRole-1GQPB8RU28LAN	AWS::IAM::Role	CREATE_COMPLETE	-
+LambdaFunction	fraud-detection-event-processor	AWS::Lambda::Function	CREATE_COMPLETE	-
+NotebookInstanceExecutionRole	aws-fraud-detection-using-NotebookInstanceExecutio-XYJKAT5HT62K	AWS::IAM::Role	CREATE_COMPLETE	-
+NotebookInstanceIAMPolicy	aws-f-Note-1XD0QCDLFYVMY	AWS::IAM::Policy	CREATE_COMPLETE	-
+PermissionForEventsToInvokeLambda	aws-fraud-detection-using-machine-learning-PermissionForEventsToInvokeLambda-1BYURKUXUSOPL	AWS::Lambda::Permission	CREATE_COMPLETE	-
+S3Bucket1	aws-fraud-detection-model-data	AWS::S3::Bucket	CREATE_COMPLETE	-
+S3Bucket2	aws-fraud-detection-processed-events	AWS::S3::Bucket	CREATE_COMPLETE	-
+ScheduledRule	aws-fraud-detection-using-machine-le-ScheduledRule-KMHPLMNKWI32	AWS::Events::Rule	CREATE_COMPLETE	-

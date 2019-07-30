@@ -1,0 +1,7 @@
+terraform {
+  backend "s3" {
+    bucket = "<bucket-name>"
+    key    = "fraud-detection/terraform.tfstate"
+    region = "<region>"
+  }
+}
