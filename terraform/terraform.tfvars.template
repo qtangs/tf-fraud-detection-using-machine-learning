@@ -1,0 +1,6 @@
+aws_region="<region>"
+aws_profile="<profile>"
+function_bucket_name="<bucket-for-lambda-function>"
+function_version="<version>"
+s3_bucket_name_1="<bucket-1>"
+s3_bucket_name_2="<bucket-2>"

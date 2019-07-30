@@ -29,8 +29,8 @@ resource "aws_iam_role_policy_attachment" "fraud_detection_firehose" {
 
 resource "aws_iam_policy" "fraud_detection_firehose_policy" {
   name        = "fraud-detection-firehose-policy"
+  description = "Policy for the Amazon Kinesis Data Firehose to save data to S3 bucket"
   path        = "/"
-  description = "FirehoseDeliveryIAMPolicy"
 
   policy = <<EOF
 {

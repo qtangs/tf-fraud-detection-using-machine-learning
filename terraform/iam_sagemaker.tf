@@ -34,8 +34,8 @@ resource "aws_iam_role_policy_attachment" "sm_notebook_instance" {
 
 resource "aws_iam_policy" "sm_notebook_instance_policy" {
   name        = "sm-notebook-instance-policy"
+  description = "Policy for the Notebook Instance to manage training jobs, models and endpoints"
   path        = "/"
-  description = "NotebookInstanceIAMPolicy"
 
   policy = <<EOF
 {

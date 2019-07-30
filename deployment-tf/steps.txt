@@ -1,7 +1,0 @@
-backend changes
-terraform init
-terraform fmt
-terraform.tfvars
-terraform validate
-terraform plan -out=tfplan
-terraform apply --auto-approve tfplan

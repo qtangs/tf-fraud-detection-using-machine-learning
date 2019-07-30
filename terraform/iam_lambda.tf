@@ -28,8 +28,9 @@ resource "aws_iam_role_policy_attachment" "fraud_detection_lambda" {
 }
 
 resource "aws_iam_policy" "fraud_detection_lambda_policy" {
-  name = "fraud-detection-lambda-policy"
-  path = "/"
+  name        = "fraud-detection-lambda-policy"
+  description = "Policy for the fraud detection function to put records into the Amazon Kinesis Data Firehose"
+  path        = "/"
 
   policy = <<EOF
 {

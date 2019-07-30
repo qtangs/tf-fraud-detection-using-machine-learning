@@ -1,0 +1,15 @@
+
+terraform_backend.tf.template -> terraform_backend.tf
+terraform.tfvars.template -> terraform.tfvars
+
+export AWS_PROFILE=<your desired profile>
+
+terraform init
+terraform validate
+terraform plan -out=tfplan
+terraform apply --auto-approve tfplan
+
+
+
+terraform plan -destroy -out=tfplan
+terraform apply tfplan
