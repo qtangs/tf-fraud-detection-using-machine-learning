@@ -20,16 +20,11 @@ resource "aws_iam_role" "sm_notebook_instance_role" {
     ]
 }
 EOF
-
-  tags = {
-    Group     = "${var.default_resource_group}"
-    CreatedBy = "${var.default_created_by}"
-  }
 }
 
 resource "aws_iam_role_policy_attachment" "sm_notebook_instance" {
-  role       = "${aws_iam_role.sm_notebook_instance_role.name}"
-  policy_arn = "${aws_iam_policy.sm_notebook_instance_policy.arn}"
+  role       = aws_iam_role.sm_notebook_instance_role.name
+  policy_arn = aws_iam_policy.sm_notebook_instance_policy.arn
 }
 
 resource "aws_iam_policy" "sm_notebook_instance_policy" {
