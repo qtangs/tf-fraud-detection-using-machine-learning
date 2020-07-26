@@ -23,8 +23,8 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "fraud_detection_lambda" {
-  role       = "${aws_iam_role.fraud_detection_lambda_role.name}"
-  policy_arn = "${aws_iam_policy.fraud_detection_lambda_policy.arn}"
+  role       = aws_iam_role.fraud_detection_lambda_role.name
+  policy_arn = aws_iam_policy.fraud_detection_lambda_policy.arn
 }
 
 resource "aws_iam_policy" "fraud_detection_lambda_policy" {

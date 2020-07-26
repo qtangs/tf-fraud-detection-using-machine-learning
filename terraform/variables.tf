@@ -11,7 +11,7 @@ variable "default_created_by" {
 
 # AWS Settings
 variable "aws_region" {
-  default = "us-east-1"
+  default = "eu-west-2"
 }
 
 variable "aws_profile" {
